@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="cartDetail"
+            type="com.lovzme.lovzme2.ui.mybagFragment.addToCart.CartDetails"/>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:cardMaxElevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/text_view_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:text="Bag Total"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/text_view_bag_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text='@{cartDetail.quantityTotal, default="₹ 0"}'
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/text_view_descount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_bag"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:text="wallet"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/text_view_descount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text='@{"- ₹ " +cartDetail.totalReduction, default="₹ 0"}'
+                android:textSize="14sp"
+                tools:ignore="HardcodedText"
+                android:layout_below="@+id/text_view_bag"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/text_view_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Sub Total"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:layout_below="@+id/text_view_descount_value"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/text_view_sub_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text='@{"₹ "+ cartDetail.cartPriceTotal, default="₹ 0"}'
+                tools:ignore="HardcodedText"
+                android:textSize="14sp"
+                android:layout_below="@+id/text_view_descount_value"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_Shipping_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Shipping"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/text_view_sub"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/text_view_Shipping_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/text_view_sub"
+                android:text='@{"₹ " + cartDetail.shippingCostTotal, default="₹ 0"}'
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_includetax_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Included taxes"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/text_view_Shipping_name"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/text_view_includetax_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text='@{"₹ " + cartDetail.totalTax, default="₹ 0"}'
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/text_view_Shipping_name"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text_view_includetax_value"
+                android:background="@color/grey"/>
+
+
+            <TextView
+                android:id="@+id/text_view_tatal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_includetax_value"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Final Total(tax incl.)"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/text_view_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_includetax_value"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text='@{"₹ " + cartDetail.cartTotal, default="₹ 0"}'
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="productlist"
+            type="com.lovzme.lovzme2.ui.homefragment.activity.ProductDetailsActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            android:elevation="8dp"
+            android:gravity="center" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_slider_product_details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    tools:ignore="ObsoleteLayoutParam">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/slider_vp_sub_banner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="320dp"
+                            app:sliderAnimationDuration="600"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorEnabled="true"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#FFF"
+                            app:sliderScrollTimeInSec="1" />
+
+                        <TextView
+                            android:id="@+id/TV_Product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/slider_vp_sub_banner"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:padding="8dp"
+                            android:text="Daisy Dee Cotton Non Padded Non Wired Full Coverage Black Bra - WARM UP - Black"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/ll_linear_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/cv_slider_product_details">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/Img_ticket"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_border_white"
+                                android:padding="7dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ticket"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toEndOf="@+id/Img_ticket"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Ticket Price"
+                                android:textSize="12sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/text_view_amount_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_value"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toEndOf="@+id/Img_ticket"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="₹ 500"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/Img_hammer"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_border_white"
+                                android:padding="7dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/hammer"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/Tv_hammer_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toEndOf="@+id/Img_hammer"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Bids"
+                                android:textSize="12sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_bidding_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toEndOf="@+id/Img_hammer"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="50"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_bidding_value_side"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/TV_bidding_value"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="/"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:id="@+id/TV_bidding_value1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/TV_bidding_value_side"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="250"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/checkAvailability_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_linear_details"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_black"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Check Availability"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/primary_text"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_searchViewContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/checkAvailability_container"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                  >
+
+                    <RelativeLayout
+                        android:id="@+id/pincode_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edt_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toStartOf="@+id/btn_check"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="Pin Code"
+                            android:layout_marginStart="8dp"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/btn_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/round_background"
+                            android:elevation="8dp"
+                            android:text="Check"
+                            android:fontFamily="@font/montserrat"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            tools:ignore="HardcodedText" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_bid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_searchViewContainer"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TV_bid_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="Choose a bid"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_bid_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV_bid_text"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:id="@+id/radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV_bid_text"
+                            android:layout_marginHorizontal="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:id="@+id/TV_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="₹ 300"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="10dp"
+                                android:layout_margin="5dp"
+                              >
+
+                                <TextView
+                                    android:id="@+id/TV_amount1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:text="₹  500"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="10dp"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:id="@+id/TV_amount2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="₹ 700"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/BTN_bid"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_below="@+id/radio_group"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/round_background"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Select your Bid"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_product_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view_bid"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/av_product_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="5dp"
+                            android:text="Product Details :"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_productFeatures"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="10dp"
+                            android:layout_below="@+id/av_product_details"
+                            android:layout_marginBottom="20dp"
+                            tools:listitem="@layout/product_features_layout" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_product_details"
+                   android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp">
+
+                        <TextView
+                            android:id="@+id/av_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="5dp"
+                            android:text="Product Description :"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tv_product_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/av_description"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/sample_text"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+        <!--<androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:elevation="3dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                tools:ignore="UnusedAttribute">
+
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_slider_product_details"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            app:cardElevation="4dp"
+                            android:paddingHorizontal="20dp"
+                            tools:ignore="ObsoleteLayoutParam">
+
+                            <com.smarteist.autoimageslider.SliderView
+                                android:id="@+id/slider_vp_sub_banner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                app:sliderAnimationDuration="600"
+                                app:sliderAutoCycleDirection="back_and_forth"
+                                app:sliderIndicatorAnimationDuration="600"
+                                app:sliderIndicatorEnabled="true"
+                                app:sliderIndicatorGravity="center_horizontal|bottom"
+                                app:sliderIndicatorMargin="15dp"
+                                app:sliderIndicatorOrientation="horizontal"
+                                app:sliderIndicatorPadding="3dp"
+                                app:sliderIndicatorRadius="2dp"
+                                app:sliderIndicatorSelectedColor="#5A5A5A"
+                                app:sliderIndicatorUnselectedColor="#FFF"
+                                app:sliderScrollTimeInSec="1" />
+
+                        </androidx.cardview.widget.CardView>
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/lightgreen"
+                        android:elevation="8dp"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:theme="@style/ToolbarColoredBackArrow" />
+
+                    <ImageView
+                        android:id="@+id/Img_add_cart"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_shopping_cart"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/badgecount_text"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="20dp"
+                        android:text="1"
+                        android:textColor="@color/violet_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    &lt;!&ndash; <com.varunest.sparkbutton.SparkButton
+                         android:id="@+id/spark_button"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="end"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginEnd="10dp"
+                         android:background="@drawable/card_background_circle"
+                         app:sparkbutton_activeImage="@drawable/ic_heart_pink"
+                         app:sparkbutton_animationSpeed="1"
+                         app:sparkbutton_iconSize="20dp"
+                         app:sparkbutton_inActiveImage="@drawable/ic_heart_gray"
+                         app:sparkbutton_primaryColor="@color/primary"
+                         app:sparkbutton_secondaryColor="@color/primary_light" />&ndash;&gt;
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appbar"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/TV_Product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="5dp"
+                        android:text="Daisy Dee Cotton Non Padded Non Wired Full Coverage Black Bra - WARM UP - Black"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text_view_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TV_Product_name"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="5dp"
+                        android:text="Amount  : "
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text_view_amount_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TV_Product_name"
+                        android:layout_toEndOf="@+id/text_view_amount"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="5dp"
+                        android:text="₹ 500"
+                        android:textColor="@color/violet_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text_view_descount_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TV_Product_name"
+                        android:layout_toEndOf="@+id/text_view_amount_value"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="5dp"
+                        android:text="₹ 500"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:id="@+id/checkAvailability_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_view_descount_value"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_black"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Check Availability"
+                            android:textColor="@color/primary_text"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_searchViewContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/checkAvailability_container"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="1dp">
+
+                        <RelativeLayout
+                            android:id="@+id/pincode_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/edt_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toStartOf="@+id/btn_check"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:hint="Pin Code"
+                                android:importantForAutofill="no"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                tools:ignore="HardcodedText" />
+
+                            <Button
+                                android:id="@+id/btn_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="3dp"
+                                android:background="@drawable/round_background"
+                                android:elevation="8dp"
+                                android:text="Check"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                tools:ignore="HardcodedText" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_searchViewContainer"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/TV_bid_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="BID PRICE "
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_view_bid_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_below="@+id/TV_bid_text" />
+
+
+                            <LinearLayout
+                                android:id="@+id/radio_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_bid_text"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/TV_amount"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/background"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text=" 300"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_amount1"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/background"
+                                    android:elevation="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="500"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_amount2"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/background"
+                                    android:elevation="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="700"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/BTN_bid"
+                                android:layout_width="match_parent"
+                                android:layout_height="42dp"
+                                android:layout_below="@+id/radio_group"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/round_background"
+                                android:fontFamily="@font/montserrat"
+                                android:text="PLACE A BID"
+                                android:textColor="@color/white"
+                                tools:ignore="HardcodedText" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_product_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_view_bid"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/av_product_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp"
+                                android:text="Product Details :"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_productFeatures"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/av_product_details"
+                                android:layout_marginBottom="20dp"
+                                tools:listitem="@layout/product_features_layout" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_product_details"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/av_description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp"
+                                android:text="Product Description :"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/tv_product_description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/av_description"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/sample_text"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="view"
+            type="com.lovzme.lovzme2.ui.profileFragment.activity.AddressActivity" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            android:elevation="8dp"
+            app:theme="@style/ToolbarColoredBackArrow" >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Shopping Address"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/TV_AddNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/image_backgraound_bottom"
+            android:drawablePadding="15dp"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Add New Address"
+            android:textAllCaps="true"
+            android:textColor="@color/violet_blue"
+            app:drawableStartCompat="@drawable/ic_add_violet_blue"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_all_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_AddNewAddress"
+            android:layout_marginTop="15dp"
+            android:text="Personal Address"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_all_address"
+            android:layout_marginTop="5dp"
+            android:overScrollMode="never"
+            tools:listitem="@layout/address_layout" />
+
+    </RelativeLayout>
+</layout>

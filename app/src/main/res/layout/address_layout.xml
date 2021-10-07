@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+   <data>
+       <variable
+           name="view"
+           type="com.lovzme.lovzme2.ui.adapter.AddressAdapter" />
+   </data>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/rb_address"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Shailendra sharma"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_username"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="30dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:text="201/13, Mitnayan CHS, Ganesh nagar, Kandiwali (w), Mumbai - 400067."
+                android:textColor="@color/secondary_text"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Mobile No -"
+                android:textColor="@color/primary_text"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:layout_toEndOf="@id/tv_mobile_title"
+                android:text="9999999999"
+                android:textColor="@color/primary"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_addressType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_username"
+                android:layout_alignParentEnd="true"
+                android:background="@color/divider"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:text="Home"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:id="@+id/edit_remove_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mobile_title"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_editBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Edit"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/violet_blue"
+                    app:drawableEndCompat="@color/divider"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_removeBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Remove"
+                    android:textAllCaps="true"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:textColor="@color/violet_blue"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+      <!--  <LinearLayout
+            android:id="@+id/edit_remove_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_container"
+            android:background="@drawable/border_top"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_editBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Edit"
+                android:background="@drawable/border_top"
+                android:textAllCaps="true"
+                android:textColor="@color/violet_blue"
+                app:drawableEndCompat="@color/divider"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_removeBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Remove"
+                android:textAllCaps="true"
+                android:textColor="@color/violet_blue"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>-->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

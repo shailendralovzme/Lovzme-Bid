@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "686873503490",
+    "project_id": "lovzme2-a2d90",
+    "storage_bucket": "lovzme2-a2d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686873503490:android:73955dc4e51889a189041b",
+        "android_client_info": {
+          "package_name": "com.lovzme.lovzme2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686873503490-vbh4pqg3g989eoejs2lgg1fgjlsr4eq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lovzme.lovzme2",
+            "certificate_hash": "c692e3f0c078ca10ce1e9ddee93a4c93b92815b6"
+          }
+        },
+        {
+          "client_id": "686873503490-u2d3mspb26hu96qvf3mgqontb3dpno24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa4yPol4ali4RFmTeP1ZcTMtr0rIrJlW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686873503490-u2d3mspb26hu96qvf3mgqontb3dpno24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="verifyphone"
+            type="com.lovzme.lovzme2.ui.activity.login.VerifyPhoneActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/Img_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:src="@drawable/otp_icon"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/TvOtpverification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="OTP Verification"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/Img_otp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/Tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvOtpverification"
+            android:fontFamily="@font/roboto"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="60dp"
+            android:text="Enter the OTP sent to"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/TvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvOtpverification"
+            android:fontFamily="@font/roboto"
+            android:text="+919856754832"
+           android:layout_toEndOf="@+id/Tvtitle"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            tools:ignore="HardcodedText" />
+<!--TODO  boxes big -->
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            app:itemCount="6"
+            android:layout_below="@+id/Tvtitle"
+            app:itemSpacing="10dp"
+            app:lineColor="@color/gray"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:id="@+id/Tv_Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pinView"
+            android:layout_marginStart="12dp"
+           android:layout_centerHorizontal="true"
+            android:textColor="@color/violet_blue"
+            android:textSize="12sp"
+            android:text="50"
+            tools:ignore="HardcodedText,TextViewEdits" />
+
+        <TextView
+            android:id="@+id/Tv_Resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Timer"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:fontFamily="@font/roboto"
+            android:text="Don't Receive OTP ?"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Tv_ResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Timer"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="RESEND OTP"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/Tv_Resend"
+            android:textColor="@color/Backgraound_color"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/BtnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_ResendCode"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/roboto"
+            android:text="Verify &amp; Proceed"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+</layout>

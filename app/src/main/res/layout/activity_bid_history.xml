@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bidhistory"
+            type="com.lovzme.lovzme2.ui.profileFragment.activity.BidHistoryActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ToolbarColoredBackArrow"
+            android:background="@color/Backgraound_color" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyler_bid_history_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            tools:listitem="@layout/layout_bid_hisotry"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

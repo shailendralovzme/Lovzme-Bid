@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.lovzme.lovzme2.ui.homefragment.adapter.ProductHomeAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:elevation="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Img_product_details"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="5dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image"
+                    tools:ignore="ContentDescription" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="25dp"
+                    android:layout_below="@+id/Img_product_details">
+
+                    <TextView
+                        android:id="@+id/text_view_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Blackberrys Ruston Tan Wallet  Blackberrys Ruston"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_liner_bidding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_view_product_name"
+                        android:layout_centerHorizontal="true"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:id="@+id/Img_ticket"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_border_white"
+                                android:padding="10dp"
+                                android:src="@drawable/ticket"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/Img_ticket"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Ticket price"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/text_view_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_value"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/Img_ticket"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="500"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:id="@+id/Img_hammer"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_border_white"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hammer"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/Tv_hammer_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/Img_hammer"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Bids"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/text_view_bid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_toEndOf="@+id/Img_hammer"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="18"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/text_view_bid_slice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:layout_marginEnd="3dp"
+                                android:layout_toEndOf="@+id/text_view_bid"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="/"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/text_view_bid_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_hammer_value"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toEndOf="@+id/text_view_bid_slice"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="110"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_timer_id"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_liner_bidding"
+                        android:layout_centerInParent="true"
+                        android:padding="4dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/text_view_hours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/lightgreen"
+                            android:fontFamily="@font/montserrat"
+                            android:format12Hour="hh:mm:ss"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_weight="1"
+                            android:text="02"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:format12Hour="hh:mm:ss"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text=":"
+                            android:textColor="@color/green"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/TV_minut"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/lightgreen"
+                            android:fontFamily="@font/montserrat"
+                            android:format12Hour="hh:mm:ss"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_weight="1"
+                            android:text="46"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:format12Hour="hh:mm:ss"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text=":"
+                            android:textColor="@color/green"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/TV_secound"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/lightgreen"
+                            android:fontFamily="@font/montserrat"
+                            android:format12Hour="hh:mm:ss"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_weight="1"
+                            android:text="46"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/text_view_bid_now"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/ll_timer_id"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_background"
+                        android:elevation="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="Bid Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <!--  <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/Img_product_details"
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/image"
+                      android:background="@drawable/bg_border_white"
+                      android:scaleType="fitXY"
+                      android:layout_marginTop="10dp"
+                      tools:ignore="ContentDescription"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="5dp"
+                      android:padding="10dp"/>
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@+id/Img_product_details"
+                     android:layout_marginStart="3dp">
+                      <TextView
+                          android:id="@+id/text_view_product_name"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:fontFamily="@font/montserrat"
+                          android:maxLines="2"
+                          android:text="Blackberrys Ruston Tan Wallet"
+                          android:textColor="@color/black"
+                          android:textSize="16sp"
+                          android:textStyle="bold"
+
+                          android:padding="5dp"
+                          tools:ignore="HardcodedText" />
+
+                      <TextView
+                          android:id="@+id/text_view_amount"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="₹ 200"
+                          android:textSize="16sp"
+                          android:textStyle="bold"
+                          android:fontFamily="@font/montserrat"
+                          android:padding="5dp"
+                          android:layout_below="@+id/text_view_product_name"
+                          android:textColor="@color/Backgraound_color"
+                          tools:ignore="HardcodedText" />
+
+
+                      <TextView
+                          android:id="@+id/text_view_offer_amount"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="₹ 400"
+                          android:textSize="16sp"
+                          android:fontFamily="@font/montserrat"
+                          android:layout_marginStart="5dp"
+                          android:padding="5dp"
+                          android:layout_toEndOf="@+id/text_view_amount"
+                          android:layout_below="@+id/text_view_product_name"
+                          android:textColor="@color/gray"
+                          tools:ignore="HardcodedText" />
+
+                      <TextView
+                          android:id="@+id/text_view_time"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Time left"
+                          android:padding="5dp"
+                          android:textSize="16sp"
+                          android:fontFamily="@font/montserrat"
+                          android:layout_below="@+id/text_view_offer_amount"
+                          android:textColor="@color/black"
+                          tools:ignore="HardcodedText" />
+
+                      <TextView
+                          android:id="@+id/text_view_timer"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toEndOf="@+id/text_view_time"
+                          android:text="02 : 45 : 12"
+                          android:layout_marginStart="10dp"
+                          android:textSize="16sp"
+                          android:fontFamily="@font/montserrat"
+                          android:format12Hour="hh:mm:ss"
+                          android:padding="5dp"
+                          android:layout_below="@+id/text_view_offer_amount"
+                          android:textColor="@color/black"
+                          tools:ignore="HardcodedText" />
+
+
+                      <TextView
+                          android:id="@+id/text_view_bid_now"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/text_view_time"
+                          android:layout_marginStart="3dp"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="5dp"
+                          android:background="@drawable/buttonbackground"
+                          android:fontFamily="@font/montserrat"
+                          android:gravity="center"
+                          android:padding="5dp"
+                          android:text="Bid Now"
+                          android:textColor="@color/white"
+                          android:textSize="16sp"
+                          tools:ignore="HardcodedText" />
+
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:padding="5dp"
+                          android:layout_alignParentEnd="true"
+                          android:layout_marginTop="15dp"
+                          android:layout_below="@+id/text_view_timer">
+                          <TextView
+                              android:id="@+id/text_view_bid"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="18"
+                              android:textSize="14sp"
+                              android:layout_marginEnd="3dp"
+                              android:fontFamily="@font/montserrat"
+                              android:textColor="@color/black"
+                              tools:ignore="HardcodedText" />
+
+                          <TextView
+                              android:id="@+id/text_view_bid_slice"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="/"
+                              android:layout_marginEnd="3dp"
+                              android:textSize="14sp"
+                              android:fontFamily="@font/montserrat"
+                              android:textColor="@color/black"
+                              tools:ignore="HardcodedText" />
+
+                          <TextView
+                              android:id="@+id/text_view_bid_value"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="110"
+                              android:textSize="14sp"
+                              android:fontFamily="@font/montserrat"
+                              android:layout_marginBottom="5dp"
+                              android:layout_marginEnd="5dp"
+                              android:textColor="@color/gray"
+                              tools:ignore="HardcodedText" />
+
+                          <TextView
+                              android:id="@+id/text_view_bid_name"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Bid"
+                              android:textSize="14sp"
+                              android:fontFamily="@font/montserrat"
+                              android:layout_marginBottom="5dp"
+                              android:layout_marginEnd="10dp"
+                              android:textColor="@color/black"
+                              tools:ignore="HardcodedText" />
+                      </LinearLayout>
+
+                  </RelativeLayout>
+
+
+
+
+              </RelativeLayout>-->
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</layout>

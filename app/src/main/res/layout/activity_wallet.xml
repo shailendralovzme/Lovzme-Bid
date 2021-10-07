@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:background="@color/Backgraound_color" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wallet_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Img_wallet"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wallet"
+                android:layout_marginTop="15dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="10dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/Tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Balance"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/Img_wallet"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/Tv_total_balace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 5000"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/amount_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/wallet_card_view"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ET_amount"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:hint="Amount to add"
+                android:textColor="@color/black"
+                android:textColorHint="@color/green"
+                android:background="@color/vib_green"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/TV_first_amount"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="₹ 500"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toStartOf="@+id/TV_secound_amount"
+                android:background="@drawable/bg_border_white"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TV_secound_amount"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="₹ 1,000"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+              android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_border_white"
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/Btn_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Add Amount"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
+</layout>

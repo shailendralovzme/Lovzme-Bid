@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.lovzme.lovzme2.ui.homefragment.adapter.ProductHomeAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Img_product_details"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/image"
+                    android:background="@drawable/bg_border_white"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="ContentDescription"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Img_product_details"
+                    android:layout_marginStart="3dp">
+                    <TextView
+                        android:id="@+id/text_view_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Blackberrys Ruston Tan Wallet"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        android:padding="5dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text_view_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 200"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/text_view_product_name"
+                        android:textColor="@color/Backgraound_color"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/text_view_offer_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 400"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="5dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@+id/text_view_amount"
+                        android:layout_below="@+id/text_view_product_name"
+                        android:textColor="@color/gray"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/text_view_add_to_cart"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_view_offer_amount"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round_edittext"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Add to Cart"
+                        android:textColor="@color/Backgraound_color"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Img_product"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/sample_product_image"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/text_view_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Img_product"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Product Name"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/gray"
+                tools:ignore="HardcodedText" />
+    -->
+
+    </RelativeLayout>
+
+</layout>

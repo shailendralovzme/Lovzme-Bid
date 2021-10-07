@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.lovzme.lovzme2.ui.orderfragment.OrderDetailsActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ToolbarColoredBackArrow"
+            android:elevation="10dp"
+            android:background="@color/lightgreen"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_ticket_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_ticket_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_id_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=" Ticket ID :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:text="219"
+                                android:padding="3dp"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_reference"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_id"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Ticket Reference :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_reference_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_id"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="EDLQ"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_reference_id"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Ticket Date :"
+                                android:textColor="@color/black"
+                                android:padding="3dp"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_date_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_reference_id"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:text="219"
+                                android:padding="3dp"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_date_value"
+                                android:fontFamily="@font/montserrat"
+                                android:padding="3dp"
+                                android:text=" Ticket Status :"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_status_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_date_value"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Processing"
+                                android:padding="3dp"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_payment_method"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payment Method :"
+                                android:padding="3dp"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/Tv_ticket_status_value"
+                                android:fontFamily="@font/montserrat"
+                                android:textColor="@color/black"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_payment_method_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_status_value"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:padding="3dp"
+                                android:text="Cod"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/TV_shipping_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/RL_ticket_value"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="5dp"
+                            android:text="Shipping Address"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV_shipping_name"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/TV_name_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Name :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Abcd"
+                                android:textColor="@color/darkgrey"
+                                android:padding="3dp"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_address_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_name"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Address :"
+                                android:textColor="@color/black"
+                                android:padding="3dp"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_name"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/montserrat"
+                                android:padding="3dp"
+                                android:maxLines="3"
+                                android:lines="3"
+                                android:text="Abcddgfgfgfdf"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_city_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_address"
+                                android:fontFamily="@font/montserrat"
+                                android:text="City :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_address"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Mumbai"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_state_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_city"
+                                android:fontFamily="@font/montserrat"
+                                android:text="State :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_city"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Maharashtra"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:id="@+id/TV_pincode_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_state"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Pincode :"
+                                android:padding="3dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/TV_pincode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_state"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="400097"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/tv_mobile_no_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_pincode"
+                                android:fontFamily="@font/montserrat"
+                                android:padding="3dp"
+                                android:text="Mobile :"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/tv_mobile_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/TV_pincode"
+                                android:layout_alignParentEnd="true"
+                                android:padding="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="9167126545"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_ticket_value"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp">
+
+                        <TextView
+                            android:id="@+id/Tv_product_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:padding="5dp"
+                            android:text="Prodcut Details"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_product_details">
+
+                            <ImageView
+                                android:id="@+id/iv_productImage"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/image"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_cart_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/iv_productImage"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_productTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:maxLines="2"
+                                    android:text="Blackberrys Ruston Tan Wallet"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_liner_bidding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:baselineAligned="false"
+                                    android:orientation="horizontal"
+                                    android:paddingHorizontal="5dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="TooDeepLayout">
+
+                                        <ImageView
+                                            android:id="@+id/Img_ticket"
+                                            android:layout_width="35dp"
+                                            android:layout_height="40dp"
+                                            android:background="@drawable/bg_border_white"
+                                            android:padding="10dp"
+                                            android:src="@drawable/hammer"
+                                            tools:ignore="ContentDescription" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/Img_ticket"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/TV_hammer_value"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="5dp"
+                                                android:fontFamily="@font/montserrat"
+                                                android:text="Bid value"
+                                                android:textColor="@color/grey"
+                                                android:textSize="12sp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                            <TextView
+                                                android:id="@+id/Tv_bidding_price"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="5dp"
+                                                android:fontFamily="@font/montserrat_bold"
+                                                android:text="₹ 3500"
+                                                android:textColor="@color/black"
+                                                android:textSize="13sp"
+                                                tools:ignore="HardcodedText" />
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="end">
+
+                                        <ImageView
+                                            android:id="@+id/Img_hammer"
+                                            android:layout_width="35dp"
+                                            android:layout_height="40dp"
+                                            android:background="@drawable/bg_border_white"
+                                            android:padding="10dp"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/ticket"
+                                            tools:ignore="ContentDescription" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/Img_hammer"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/Tv_ticket_value"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="0dp"
+                                                android:layout_marginStart="5dp"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/montserrat"
+                                                android:maxLines="2"
+                                                android:text="Ticket price"
+                                                android:textColor="@color/grey"
+                                                android:textSize="12sp"
+                                                tools:ignore="HardcodedText" />
+
+                                            <TextView
+                                                android:id="@+id/Tv_ticket_price"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="5dp"
+                                                android:fontFamily="@font/montserrat_bold"
+                                                android:text="₹ 500"
+                                                android:textColor="@color/black"
+                                                android:textSize="13sp"
+                                                tools:ignore="HardcodedText" />
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/iv_productImage"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:id="@+id/Tv_ticket_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/montserrat"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:text="Ticket Total "
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Tv_ticket_total">
+
+                                <TextView
+                                    android:id="@+id/TV_ticket_sub_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Ticket Subtotal :"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_ticket_sub_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Abcd"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_disscount_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_ticket_sub_value"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Discount :"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_disscount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_ticket_sub_value"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:maxLines="3"
+                                    android:padding="3dp"
+                                    android:text="₹ 0.0"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_shiiping_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_disscount_value"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Shipping :"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_shiiping"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_disscount_value"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="₹ 0.00000"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_tax_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_shiiping"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Tax :"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_tax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_shiiping"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="₹ 0.00000"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+
+                                <TextView
+                                    android:id="@+id/TV_final_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_tax"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="Final Total :"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/TV_final_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/TV_tax"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="3dp"
+                                    android:text="₹ 450.00"
+                                    android:textColor="@color/darkgrey"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+        <!--<androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/delivery_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawablePadding="-190dp"
+                        android:fontFamily="@font/roboto"
+                        android:padding="10dp"
+                        android:text="Your Order"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_slider_product_details"
+                            android:layout_width="fill_parent"
+                            android:layout_height="400dp"
+                            android:layout_alignParentTop="true"
+                            app:cardElevation="4dp"
+                            tools:ignore="ObsoleteLayoutParam">
+
+                            <ImageView
+                                android:id="@+id/slider_vp_sub_banner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="400dp"
+                                tools:ignore="ContentDescription" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cv_slider_product_details"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/TV_Product_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Product Name"
+                                android:padding="10dp"
+                                android:layout_marginStart="15dp"
+                                android:textSize="14sp"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+
+                            <TextView
+                                android:id="@+id/TV_Product_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹ 480"
+                                android:padding="10dp"
+                                android:layout_marginEnd="15dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/violet_blue"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="3dp"
+                        app:cardElevation="3dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_data"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/textview_delivery_charges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="Delivery Charges"
+
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/deliveryCharge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="₹ 20"
+                                android:textColor="@color/black"
+
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText,RelativeOverlap" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#CBCAD0"
+                                android:layout_below="@+id/deliveryCharge"/>
+
+
+                            <LinearLayout
+                                android:id="@+id/promocodeDeductHolder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textview_delivery_charges"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Promocode "
+                                    android:textColor="@color/gray"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/promo_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Coupons"
+                                    android:textColor="@color/gray"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="- ₹"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/promocodeDeduction"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/roboto"
+                                    android:text=""
+                                    android:textColor="@color/gray"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_view_grand_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/promocodeDeductHolder"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="Grand Total"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/total_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/promocodeDeductHolder"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:padding="5dp"
+                                android:gravity="start"
+                                android:text="₹ 500"
+                                android:textColor="@color/primary_dark"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#CBCAD0"
+                                android:layout_below="@+id/total_price"/>
+
+
+                            <TextView
+                                android:id="@+id/text_view_payment_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_view_grand_total"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="Payment Status"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/payment_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/total_price"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:padding="5dp"
+                                android:text="done"
+                                android:textColor="@color/primary_dark"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#CBCAD0"
+                                android:layout_below="@+id/payment_status"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_view_payment_status"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="Payment Mode"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/payment_mode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/payment_status"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/roboto"
+                                android:gravity="start"
+                                android:text="COD"
+                                android:padding="5dp"
+                                android:textColor="@color/primary_dark"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#CBCAD0"
+                                android:visibility="gone"
+                                android:layout_below="@+id/payment_mode"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>-->
+
+    </RelativeLayout>
+</layout>

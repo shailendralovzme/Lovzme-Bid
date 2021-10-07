@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tb_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgreen"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="?attr/actionBarSize">
+
+
+     <!--   <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/splash_logo"
+            tools:ignore="ContentDescription" />-->
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToolBar"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="view"
+            type="com.lovzme.lovzme2.ui.orderfragment.adapter.OrderDetailsAdapter" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/guestCardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@drawable/bg_border_white"
+                android:src="@drawable/image_product"
+                tools:ignore="ContentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/TV_Product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:padding="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/guestCardview"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/TV_Product_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 480"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/violet_blue"
+            android:textStyle="bold"
+            android:layout_below="@+id/guestCardview"
+            tools:ignore="HardcodedText" />
+
+        <!--<TextView
+            android:id="@+id/av_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_Product_amount"
+            android:layout_marginTop="5dp"
+            android:text="Description :"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_below="@+id/av_description"
+            android:text="@string/sample_text"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/secondary_text" />-->
+    </RelativeLayout>
+</layout>

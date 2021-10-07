@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lovzme2</string>
+    <string name="home">Home</string>
+    <string name="ticketOrder">Order</string>
+    <string name="winner">WinnerProduct</string>
+    <string name="bag">My Bag</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="store_name">The Store of Your Dreams.You will find here what you need</string>
+    <string name="sample_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</string>
+    <string name="comment_order_msg">If you would like to add a comment about your ticketOrder, please write it in the field below.</string>
+    <string name="invalid_pin">Invalid pincode !</string>
+    <string name="empty">EMPTY</string>
+    <string name="total_balance">\"Your Discount Balance is \"</string>
+    <string name="my_bag">My Bag</string>
+
+</resources>

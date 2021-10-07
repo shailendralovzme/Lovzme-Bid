@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lovzme.lovzme2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".application.LovzMe2App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lovzme2"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.mybagFragment.ZararPayActivity"
+            android:exported="true" />
+        <activity android:name=".ui.profileFragment.activity.WinnerProductActivity" />
+        <activity android:name=".ui.activity.CompletePaymentActivity" />
+        <activity android:name=".ui.wishlist.WishlistActivity" />
+        <activity android:name=".ui.activity.SpalshScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.mybagFragment.activity.CheckoutActivity" />
+        <activity android:name=".ui.profileFragment.activity.WalletActivity" />
+        <activity android:name=".ui.profileFragment.activity.BidHistoryActivity" />
+        <activity android:name=".ui.profileFragment.activity.ManageAddressActivity" />
+        <activity android:name=".ui.profileFragment.activity.AddressActivity" />
+        <activity android:name=".ui.orderfragment.OrderDetailsActivity" />
+        <activity android:name=".ui.activity.login.VerifyPhoneActivity" />
+        <activity android:name=".ui.activity.signUp.SignUpActivity" />
+        <activity android:name=".ui.homefragment.activity.ProductDetailsActivity" />
+        <activity android:name=".ui.activity.login.SignInActivity" />
+        <activity android:name=".ui.activity.LogInActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

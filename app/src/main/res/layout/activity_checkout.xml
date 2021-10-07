@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="checkout"
+            type="com.lovzme.lovzme2.ui.mybagFragment.activity.CheckoutActivity" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            android:elevation="8dp"
+            app:theme="@style/ToolbarColoredBackArrow">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Check Out"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:elevation="4dp"
+        tools:ignore="UnusedAttribute">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_right"
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:text="15 Days Return"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/primary_text"
+            app:drawableStartCompat="@drawable/ic_return_symb"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="-15dp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:text="Secured Payment"
+            android:fontFamily="@font/montserrat"
+            tools:ignore="HardcodedText,RtlSymmetry"
+            android:textColor="@color/primary_text"
+            app:drawableLeftCompat="@drawable/ic_lock"/>
+
+    </LinearLayout>
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_container"
+            android:background="@color/bg_off_white"
+            android:padding="8dp"
+            app:sv_animationType="All"
+            app:sv_doneCircleColor="@color/accent"
+            app:sv_doneCircleRadius="12dp"
+            app:sv_doneStepLineColor="@color/accent"
+            app:sv_doneStepMarkColor="@color/white"
+            app:sv_doneTextColor="@color/accent"
+            app:sv_nextStepLineColor="@color/secondary_text"
+            app:sv_nextTextColor="@color/secondary_text"
+            app:sv_selectedCircleColor="@color/primary"
+            app:sv_selectedCircleRadius="10dp"
+            app:sv_selectedStepNumberColor="@color/white"
+            app:sv_selectedTextColor="@color/primary_text"
+            app:sv_stepLineWidth="1dp"
+            app:sv_stepNumberTextSize="10sp"
+            app:sv_stepPadding="4dp"
+            app:sv_stepViewStyle="@style/StepView"
+            app:sv_stepsNumber="3"
+            app:sv_textPadding="5dp"
+            app:sv_textSize="10sp"
+            app:sv_typeface="@font/roboto" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/step_view"
+        android:background="@color/white"
+        android:overScrollMode="never"/>
+    </RelativeLayout>
+</layout>

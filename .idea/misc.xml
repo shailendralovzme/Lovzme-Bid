@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable-xhdpi/ic_delete_primary.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable-xxxhdpi/card_background_circle.xml" value="0.35185185185185186" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable-xxxhdpi/hotdeals_tab_background.xml" value="0.35833333333333334" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/background.xml" value="0.3435185185185185" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/bg_border_white.xml" value="0.3435185185185185" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/bottom_background.xml" value="0.3435185185185185" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/buttonbackground.xml" value="0.3435185185185185" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/card_radious_background.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/categories_gradian_bg.xml" value="0.35833333333333334" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_account.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_address.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_baseline_share.xml" value="0.35185185185185186" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_baseline_shopping.xml" value="0.35185185185185186" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_baseline_shopping_cart.xml" value="0.35185185185185186" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_box.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_chat.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_email.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_google.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_heart_gray.xml" value="0.35185185185185186" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_heart_white.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35833333333333334" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_order.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_wallete.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/ic_winner.xml" value="0.3537037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/image_backgraound_bottom.xml" value="0.3287037037037037" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/item_background.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/round_background.xml" value="0.35833333333333334" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/round_edittext.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/selecte_bottom_navi.xml" value="0.3435185185185185" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/spinner_background.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/drawable/strike_line.xml" value="0.221875" />
+        <entry key="..\:/Lovzme2/app/src/main/res/font/montserrat.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/font/montserrat_subrayada.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_address.xml" value="0.32314814814814813" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_bid_history.xml" value="0.19114583333333332" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_checkout.xml" value="0.24537037037037038" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_complete_payment.xml" value="0.325" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_dash_board.xml" value="0.36666666666666664" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_login.xml" value="0.2740740740740741" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_manage_address.xml" value="0.2861111111111111" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_order_details.xml" value="0.2972222222222222" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_product_details.xml" value="0.33" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_sign_in.xml" value="0.2740740740740741" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_spalsh_screen.xml" value="0.33055555555555555" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_verify_phone.xml" value="0.2740740740740741" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/activity_zarar_pay.xml" value="0.36666666666666664" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/address_layout.xml" value="0.2972222222222222" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_choose_address.xml" value="0.24537037037037038" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_comment_order.xml" value="0.24537037037037038" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_current_bid.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_home.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_make_payment.xml" value="0.3212962962962963" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_my_bag.xml" value="0.33" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_oder.xml" value="0.3212962962962963" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_product_order.xml" value="0.31574074074074077" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_profile.xml" value="0.33055555555555555" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_ticket_order.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/fragment_up_comming.xml" value="0.3212962962962963" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/home_toolbar.xml" value="0.33055555555555555" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/invoice_bill_layout.xml" value="0.33" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/item_loading.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_alert_view.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_bid_value.xml" value="0.36666666666666664" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_blank.xml" value="0.3074074074074074" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_cart_item.xml" value="0.33" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_order_id.xml" value="0.33" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_product.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_toolbar.xml" value="0.24537037037037038" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_upcoming_bid.xml" value="0.3212962962962963" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/layout_winner_product.xml" value="0.33611111111111114" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/mydashboard_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Lovzme2/app/src/main/res/layout/product_features_layout.xml" value="0.30092592592592593" />
+        <entry key="..\:/Lovzme2/app/src/main/res/menu/bottom_menu.xml" value="0.30092592592592593" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="14">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="5" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="14">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="2" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="5" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="lombok.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

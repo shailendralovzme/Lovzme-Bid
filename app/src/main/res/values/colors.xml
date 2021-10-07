@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="primary">#ff0066</color>
+    <color name="primary_dark">#de055b</color>
+    <color name="primary_light">#F8BBD0</color>
+    <color name="accent">#09e8e8</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="primary_text">#484848</color>
+    <color name="secondary_text">#757575</color>
+    <color name="gray">#c9c9c9</color>
+    <color name="light_gray">#F1F0F0</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="divider1">#EDEDED</color>
+    <color name="bg_off_white">#f5f5f5</color>
+    <color name="violet_blue">#2972a7</color>
+    <color name="vib_green">#DEEADF</color>
+    <color name="red">#F44336</color>
+    <color name="status">#081A30</color>
+    <color name="light_blue">#9720FFDE</color>
+    <color name="brand_color">#010F21</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="Backgraound_color">#E5185D</color>
+    <color name="yellow">#E5B218</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pink">#ff0066</color>
+    <color name="green">#22B4B3</color>
+    <color name="green1">#2edec0</color>
+    <color name="lightpink">#ffebf3</color>
+    <color name="lightgreen">#E7F5F7</color>
+    <color name="grey">#c9c9c9</color>
+    <color name="darkgrey">#5c7d75</color>
+    <color name="name">#2cd8be</color>
+    <color name="green2">#1eb6b6</color>
+
+</resources>
